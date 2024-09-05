@@ -1,0 +1,39 @@
+Task preview - J2EE- UserProfile CRUD
+
+
+Developing a User Profile Management Service
+
+
+Introduction
+In a J2EE application, managing user profiles effectively is fundamental for maintaining
+application functionality and user interaction. This involves creating, retrieving, updating,
+and deleting user profiles using in-memory data structures like Java Map collections. The
+service should ensure efficient data handling and provide basic CRUD operations while
+maintaining application scalability and reliability.
+
+
+Problem Statement
+You are tasked with developing a user profile management service for a simple J2EE
+application using Java Map for storage. The service will handle CRUD operations for user
+profiles, maintaining data integrity within the application runtime environment.
+
+
+createUserProfile(String userId, UserProfile userProfile): This method creates a
+new user profile with the provided user ID and profile details. If a user with the same
+ID already exists in the Java Map, it should return false. Otherwise, it should store
+the profile details in the Java Map and return true upon successful creation.
+
+getUserProfile(String userId): This method retrieves the user profile for the given
+user ID from the Java Map. If the user ID does not exist, it should return null.
+Otherwise, it should return a UserProfile object containing the user's details.
+
+updateUserProfile(String userId, UserProfile updatedProfile): This method
+updates an existing user profile with the provided updatedProfile in the Java Map. It
+should replace the existing profile details with the new ones and return true upon
+successful update. If the user ID does not exist, it should return false.
+
+deleteUserProfile(String userId): This method deletes the user profile associated
+with the given user ID from the Java Map. It should return true if the profile was
+successfully deleted. If the user ID does not exist, it should return false.
+
+Note: Include Constructors, Getters, and Setters in model class
